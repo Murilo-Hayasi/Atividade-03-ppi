@@ -97,6 +97,7 @@ app.get("/", (req, res) => {
       </div>
 
       <script>
+        // Função simples de busca local
         function buscarDisco(e) {
           e.preventDefault();
           const termo = document.getElementById('buscaInput').value.toLowerCase();
@@ -121,6 +122,7 @@ app.post("/cadastro", (req, res) => {
   }
 
   discos.push({ titulo, artista, ano, genero });
+
   res.redirect("/");
 });
 
